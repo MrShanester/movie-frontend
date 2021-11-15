@@ -3,10 +3,9 @@
     <h1>{{ message }}</h1>
     <div v-for="movie in movies" v-bind:key="movie.id">
       <h2>{{ movie.title }}</h2>
+      <p>{{ movie.plot }}</p>
+      <p>{{ movie.year }}</p>
 
-      <img v-bind:src="movie.image" v-bind:alt="movie.title" />
-
-      <p>{{ movie.body }}</p>
       <p></p>
       <p>---------------------------------</p>
     </div>
@@ -50,11 +49,11 @@ export default {
   data: function () {
     return {
       message: "Movies",
-      moviess: [],
+      movies: [],
     };
   },
   created: function () {
-    this.indexMoviess();
+    this.indexMovies();
   },
   methods: {
     indexMovies: function () {
