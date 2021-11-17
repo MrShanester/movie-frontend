@@ -67,7 +67,7 @@ const axios = require("axios");
 export default {
   data: function () {
     return {
-      message: "Welcome To The Shop",
+      message: "IMDB (New and Improved)",
       movies: [],
       newMovieParams: {},
       currentMovie: {},
